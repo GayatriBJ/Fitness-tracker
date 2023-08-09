@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{text-align:left;}
+        body
+        {background-image: url(https://media.karousell.com/media/photos/products/2022/12/19/ancwear_fitness_tracker_waterp_1671489382_90b90fc1_progressive);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-color: rgba(220, 207, 20, 0.45);
+        background-position:right;
+        background-attachment:fixed;
+        font-style: italic  ;
+    
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color:rgb(255, 0, 0);">  Welcome to Fitness Tracker Prediction</h1>
+    <form method="post" action="/FitnessTracker" >
+       
+        <b><label>Total Steps :</label>
+        <input type="text" name = "TotalSteps"  size = "50" placeholder="input Total Steps covered in a day"/> 
+        <br/> <br/>
+
+        <b><label>Total Distance :</label>
+        <input type="text" name = "TotalDistance"  size = "50" placeholder="input Total distance covered in a day"/> 
+        <br/> <br/>
+
+        <b><label>Tracker Distance :</label>
+        <input type="text" name = "TrackerDistance"  size = "50" placeholder="input distance covered by tracker"/> 
+        <br/> <br/>
+
+        <b><label>Logged Activities Distance :</label>
+        <input type="text" name = "LoggedActivitiesDistance"  size = "50" placeholder="input logged activities distance"/>
+        <br/> <br/>
+
+        <b><label>Very Active Distance :</label>
+        <input type="text" name = "VeryActiveDistance"  size = "50" placeholder="input Very Active Distance in km"/>
+        <br/> <br/>
+        
+        <b><label>Moderately Active Distance :</label>
+        <input type="text" name = "ModeratelyActiveDistance"  size = "50" placeholder="input ModeratelyActiveDistance in km"/>
+        <br/> <br/>
+                
+        <b><label>Light Active Distance :</label>
+        <input type="text" name = "LightActiveDistance"  size = "50" placeholder="input Light Active Distance in km"/>
+        <br/> <br/>
+                    
+        <b><label>Sedentary Active Distance :</label>
+        <input type="text" name = "SedentaryActiveDistance"  size = "50" placeholder="input Sedentary Active Distance in km"/>
+        <br/> <br/>
+
+        <b><label>Very Active Minutes	 :</label>
+            <input type="text" name = "VeryActiveMinutes"  size = "50" placeholder="input Very Active Minutes"/>
+            <br/> <br/>
+
+        <b><label>Fairly Active Minutes :</label>
+        <input type="text" name = "FairlyActiveMinutes"  size = "50" placeholder="input Fairly Active Minutes"/>
+        <br/> <br/>
+            
+        <b><label>Lightly Active Minutes :</label>
+        <input type="text" name = "LightlyActiveMinutes"  size = "50" placeholder="input Lightly Active Minutes"/>
+        <br/> <br/>
+
+        <b><label>Sedentary Minutes :</label>
+        <input type="text" name = "SedentaryMinutes"  size = "50" placeholder="input Sedentary Minutes"/>
+        <br/> <br/>
+
+        <b><label>Day Of The Week :</label>
+            <select name = "DayOfTheWeek">
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                </select><br/> <br/>
+
+        <b><label>Total Active Minutes :</label>
+        <input type="text" name = "TotalActiveMinutes"  size = "50" placeholder="input Total Active Minutes"/>
+        <br/> <br/>
+            
+   
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/> 
+        <br/><br/>
+    
+    <h2><b>The total calories burned is {{PREDICTED_INSIGHT}} kcals </b></h2>
+    </form>                 
+
+
+</body>
+</html>
